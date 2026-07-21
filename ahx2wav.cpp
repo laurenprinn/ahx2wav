@@ -55,13 +55,13 @@
 
 #ifndef _MSC_VER
 #include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
 #else
 #include <filesystem>
+namespace fs = std::filesystem;
 #endif
 
 #include <chrono>
-
-namespace fs = std::experimental::filesystem;
 
 char fn_ahx[4096], fn_wav[4096]; 
 
